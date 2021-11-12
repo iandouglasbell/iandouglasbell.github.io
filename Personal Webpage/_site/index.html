@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>index</title>
+
+<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.tab('show');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Ian's Gallery</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="mailto:&lt;iandouglasbell-gh@gmail.com&gt;">
+    <span class="fa fa-envelope fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="http://github.com/iandouglasbell">
+    <span class="fa fa-github fa-lg"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">index</h1>
+
+</div>
+
+
+<div id="tidy-tuesdays" class="section level1">
+<h1>Tidy-Tuesdays</h1>
+<p>My name is Ian Bell. I work in the environmental field and use TidyTuesdays as a way of improving my R and data analysis skills. I usually tweet my code and plots at <span class="citation">[@Ian_Bellio]</span>(<a href="https://twitter.com/Ian_Bellio" class="uri">https://twitter.com/Ian_Bellio</a>), and always appreciate thoughts on how my code and data visualization could improve!</p>
+<div id="broadband" class="section level3">
+<h3><a href="https://github.com/iandouglasbell/Tidy-Tuesdays/tree/master/2021-05-12">2021-05-12 Broadband</a></h3>
+<p><img src="https://github.com/iandouglasbell/Tidy-Tuesdays/blob/master/2021-05-12/Broadband.png" /></p>
+</div>
+<div id="bishop-freezes" class="section level3">
+<h3><a href="https://github.com/iandouglasbell/Tidy-Tuesdays/blob/master/2020-10-27">2020-10-27 Bishop Freezes</a></h3>
+<div class="figure">
+<img src="https://github.com/iandouglasbell/Tidy-Tuesdays/blob/master/2020-10-27/BishopFreeze.png" alt="" />
+<p class="caption">Week 43</p>
+</div>
+</div>
+<div id="beer-awards-rmarkdown-webpage" class="section level3">
+<h3><a href="https://iandouglasbell.github.io/Beer.html">2020-10-20 Beer Awards (RMarkdown webpage)</a></h3>
+<div class="figure">
+<img src="https://github.com/iandouglasbell/Tidy-Tuesdays/blob/master/2020-10-20/beergif.gif" alt="" />
+<p class="caption">Week 42</p>
+</div>
+</div>
+<div id="ncaa-womens-basketball" class="section level3">
+<h3><a href="https://github.com/iandouglasbell/Tidy-Tuesdays/tree/master/2020-10-06">2020-10-06 NCAA Women’s Basketball</a></h3>
+<div class="figure">
+<img src="https://github.com/iandouglasbell/Tidy-Tuesdays/blob/master/2020-10-06/NCAA_bball.png" alt="" />
+<p class="caption">Week 40</p>
+</div>
+</div>
+<div id="climbing" class="section level3">
+<h3><a href="https://github.com/iandouglasbell/Tidy-Tuesdays/tree/master/2020-09-29">2020-09-29 Climbing</a></h3>
+<div class="figure">
+<img src="https://github.com/iandouglasbell/Tidy-Tuesdays/blob/master/2020-09-29/climbing.png" alt="" />
+<p class="caption">Week 38</p>
+</div>
+</div>
+<div id="friends" class="section level3">
+<h3><a href="https://github.com/iandouglasbell/Tidy-Tuesdays/tree/master/2020-09-08">2020-09-09 FRIENDS</a></h3>
+<div class="figure">
+<img src="https://github.com/iandouglasbell/Tidy-Tuesdays/blob/master/2020-09-08/FriendsPlot.png" alt="" />
+<p class="caption">Week 37</p>
+</div>
+</div>
+<div id="extinct-plants" class="section level3">
+<h3><a href="https://github.com/iandouglasbell/Tidy-Tuesdays/tree/master/2020-08-18">2020-08-18 Extinct Plants</a></h3>
+<div class="figure">
+<img src="https://github.com/iandouglasbell/Tidy-Tuesdays/blob/master/2020-08-18/plant_extinctions.png" alt="" />
+<p class="caption">Week 34</p>
+</div>
+</div>
+<div id="european-energy" class="section level3">
+<h3><a href="https://github.com/iandouglasbell/Tidy-Tuesdays/tree/master/2020-08-03">2020-08-03 European Energy</a></h3>
+<div class="figure">
+<img src="https://github.com/iandouglasbell/Tidy-Tuesdays/blob/master/2020-08-03/EnergyTable.png" alt="" />
+<p class="caption">Week 32</p>
+</div>
+</div>
+<div id="palmer-penguins" class="section level3">
+<h3><a href="https://github.com/iandouglasbell/Tidy-Tuesdays/tree/master/2020-07-27">2020-07-27 Palmer Penguins</a></h3>
+<div class="figure">
+<img src="https://github.com/iandouglasbell/Tidy-Tuesdays/blob/master/2020-07-27/penguins.png" alt="" />
+<p class="caption">Week 31</p>
+</div>
+</div>
+<div id="broadway-trends" class="section level3">
+<h3><a href="https://github.com/iandouglasbell/Tidy-Tuesdays/tree/master/2020-04-27">2020-04-27 Broadway Trends</a></h3>
+<div class="figure">
+<img src="https://github.com/iandouglasbell/Tidy-Tuesdays/blob/master/2020-04-27/Broadway.png" alt="" />
+<p class="caption">2020 Week 18</p>
+</div>
+</div>
+<div id="nhl-stats" class="section level3">
+<h3><a href="https://github.com/iandouglasbell/Tidy-Tuesdays/tree/master/2020-03-03">2020-03-03 NHL Stats</a></h3>
+<div class="figure">
+<img src="https://github.com/iandouglasbell/Tidy-Tuesdays/blob/master/2020-03-03/NHL.png" alt="" />
+<p class="caption">2020 Week 8</p>
+</div>
+</div>
+<div id="measles-vaccinations" class="section level3">
+<h3><a href="https://github.com/iandouglasbell/Tidy-Tuesdays/tree/master/2020-02-24">2020-02-27 Measles Vaccinations</a></h3>
+<div class="figure">
+<img src="https://github.com/iandouglasbell/Tidy-Tuesdays/blob/master/2020-02-24/CA_Measles.png" alt="" />
+<p class="caption">2020 Week 7</p>
+</div>
+</div>
+<div id="nfl-games" class="section level3">
+<h3><a href="https://github.com/iandouglasbell/Tidy-Tuesdays/tree/master/2020-02-04">2020-02-04 NFL Games</a></h3>
+<div class="figure">
+<img src="https://github.com/iandouglasbell/Tidy-Tuesdays/blob/master/2020-02-04/NFL_Wins.png" alt="" />
+<p class="caption">2020 Week 5</p>
+</div>
+</div>
+<div id="san-francisco-trees-r-markdown-webpage" class="section level3">
+<h3><a href="https://iandouglasbell.github.io/SFtrees.html">2020-01-27 San Francisco Trees (R Markdown Webpage)</a></h3>
+<div class="figure">
+<img src="https://github.com/iandouglasbell/Tidy-Tuesdays/blob/master/2020-01-27/Screenshot.png" alt="" />
+<p class="caption">2020 Week 4</p>
+</div>
+</div>
+<div id="spotify-songs" class="section level3">
+<h3><a href="https://github.com/iandouglasbell/Tidy-Tuesdays/tree/master/2020-01-21">2020-01-21 Spotify Songs</a></h3>
+<div class="figure">
+<img src="https://github.com/iandouglasbell/Tidy-Tuesdays/blob/master/2020-01-21/SongAttributes.png" alt="" />
+<p class="caption">2020 Week 3</p>
+</div>
+</div>
+<div id="passwords" class="section level3">
+<h3><a href="https://github.com/iandouglasbell/Tidy-Tuesdays/tree/master/2020-01-14">2020-01-14 Passwords</a></h3>
+<div class="figure">
+<img src="https://github.com/iandouglasbell/Tidy-Tuesdays/blob/master/2020-01-14/AnimalPasswords.png" alt="" />
+<p class="caption">Passwords</p>
+</div>
+</div>
+<div id="australia-fires" class="section level3">
+<h3><a href="https://github.com/iandouglasbell/Tidy-Tuesdays/tree/master/2020-01-07">2020-01-07 Australia Fires</a></h3>
+<div class="figure">
+<img src="https://github.com/iandouglasbell/Tidy-Tuesdays/blob/master/2020-01-07/SEAusTemps.png" alt="" />
+<p class="caption">AUS Fires</p>
+</div>
+</div>
+<div id="replicating-charts" class="section level3">
+<h3><a href="https://github.com/iandouglasbell/Tidy-Tuesdays/tree/master/2019-12-09">2019-12-09 Replicating Charts</a></h3>
+<div class="figure">
+<img src="https://github.com/iandouglasbell/Tidy-Tuesdays/blob/master/2019-12-09/LeBronShots.png" alt="" />
+<p class="caption">Lebron</p>
+</div>
+</div>
+<div id="philadelphia-parking-violations" class="section level3">
+<h3><a href="https://github.com/iandouglasbell/Tidy-Tuesdays/tree/master/2019-12-02">2019-12-02 Philadelphia Parking Violations</a></h3>
+<div class="figure">
+<img src="https://github.com/iandouglasbell/Tidy-Tuesdays/blob/master/2019-12-02/HP%20Violations.png" alt="" />
+<p class="caption">Parking</p>
+</div>
+</div>
+<div id="nz-bird-of-the-year" class="section level3">
+<h3><a href="https://github.com/iandouglasbell/Tidy-Tuesdays/tree/master/2019-11-18">2019-11-18 NZ Bird of the Year</a></h3>
+<div class="figure">
+<img src="https://github.com/iandouglasbell/Tidy-Tuesdays/blob/master/2019-11-18/Voters_Time_FinalPlot.png" alt="" />
+<p class="caption">Bird of the Year</p>
+</div>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

@@ -1,3 +1,7 @@
+---
+title: Home
+output: html_document
+---
 
 My name is Ian Bell. I work in the environmental field and use TidyTuesdays as a way of improving my R and data analysis skills. I usually tweet my code and plots at [@Ian_Bellio](https://twitter.com/Ian_Bellio), and always appreciate thoughts on how my code and data visualization could improve!
 

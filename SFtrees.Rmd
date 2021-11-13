@@ -1,10 +1,5 @@
 ---
 title: "Top 5 Most Common Tree Types in San Francisco"
-output:
-    prettydoc::html_pretty:
-    theme: cayman
-    highlight: github
-    fig_width: 4
 ---
 
 By Ian Bell • Twitter: [Ian_Bellio](https://twitter.com/Ian_Bellio) • January 2020

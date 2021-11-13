@@ -7,3 +7,4 @@ navbar:
     - text: "About"
       href: about.html
 base_url: https://iandouglasbell.github.io/
+output_dir: "docs"

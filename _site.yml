@@ -4,10 +4,10 @@ navbar:
   left:
     - text: "Data Viz"
       href: index.html
-    - text: "About"
-      href: about.html
     - text: "Web"
       href: Web.html
+    - text: "About"
+      href: about.html
 base_url: https://iandouglasbell.github.io/
 output_dir: "docs"
 output:

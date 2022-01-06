@@ -1,11 +1,12 @@
 ---
 title: "About"
 ---
+<center>
+![](images/IanOuzel.jpg){width=40%}
+</center>
 
-##### Hi,My name is Ian Bell. Thanks for taking a look at my portfolio.  I live in the Eastern Sierra part of California. 
+Hi, my name is Ian Bell. Thanks for taking a look at some examples of my work! 
 
+I live in the Eastern Sierra part of California, where I work for a local Tribal consortium. I specialize in water and data science.
 
-##### I work for a local Tribal consortium, where I specialize in water and data. Outside of work I enjoy spending time hiking with my puppy, Ouzel Tuesday.  
-
-
-##### You can reach me via email by combining iandouglasbell, the at symbol, and gmail.com.
+You can reach me with any thoughts or questions via email at iandouglasbell + (the at symbol) + gmail.com.

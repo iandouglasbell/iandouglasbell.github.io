@@ -9,7 +9,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ### Reimagining Payahuunadü
 
-[Reimagining Payahuunadü](http://www.oviwc.org/storymap/) is an ESRI Story Map I made the uses maps and visuals to tell the Indigenous Water and Land History of the Eastern Sierra Nevada in California. 
+[Reimagining Payahuunadü](http://www.oviwc.org/storymap/) is an ESRI Story Map I created that uses maps and visuals to tell the Indigenous Water and Land History of the Eastern Sierra Nevada in California. 
 
 ![](images/StoryMap.png)
 
@@ -20,6 +20,6 @@ knitr::opts_chunk$set(echo = TRUE)
 ![](images/Beer.gif)
 
 ### San Francisco Trees
-[San Francisco Trees](https://iandouglasbell.github.io/SFtrees.html) is an RMarkdown webpage I made for a Tidy Tuesday data challenge. It uses leaflet mapping to explore the tree census of San Francisco.  
+[San Francisco Trees](https://iandouglasbell.github.io/SFtrees.html) is an RMarkdown webpage I coded for a Tidy Tuesday data challenge. It uses leaflet mapping to explore the tree census of San Francisco.  
 
 ![](images/SFTrees.png)
